@@ -1,0 +1,11 @@
+Cython
+scipy
+patsy
+statsmodels
+openpyxl
+xlrd
+xlwt
+BeautifulSoup4
+lxml
+html5lib
+git+https://github.com/PyTables/PyTables.git@v.3.0.0#egg=tables
