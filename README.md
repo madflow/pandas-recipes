@@ -15,17 +15,21 @@ Requirements
 
 + Install with minimum and recommended dependencies
 
+
 	pip install -r requirements/minimal.txt
 
 + Install suggested dependencies
+
 
 	pip install -r requirements/suggested.txt
 
 + Install SPSS read/write support
 
+
 	pip install -r requirements/spss.txt
 
 + Various build dependencies on Debian
+
 
 	sudo apt-get build-dep python-lxml
 	sudo apt-get install libhdf5-dev
