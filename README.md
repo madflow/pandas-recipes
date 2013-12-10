@@ -6,9 +6,10 @@ Pandas Recipes
 Virtualenv Setup
 =============
 
-	$ mkdir pandas_project && cd !$
-	$ mkvirtualenv --no-site-packages `pwd`/pandas_env
-	$ source pandas_env/bin/activate
+    mkdir pandas_project && cd !$
+	mkvirtualenv --no-site-packages `pwd`/pandas_env
+	source pandas_env/bin/activate
+    git clone https://github.com/madflow/pandas-recipes.git
 
 Requirements
 =============
@@ -19,15 +20,15 @@ Requirements
 
 + Install with minimum and recommended dependencies
 
-		pip install -r requirements/minimal.txt
+		pip install -r pandas-recipes/requirements/minimal.txt
 
 + Install suggested dependencies
 
-		pip install -r requirements/suggested.txt
+		pip install -r pandas-recipes/requirements/suggested.txt
 
 + Install SPSS read/write support
 
-		pip install -r requirements/spss.txt
+		pip install -r pandas-recipes/requirements/spss.txt
 
 + Various build dependencies on Debian
 
