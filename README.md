@@ -7,11 +7,15 @@ Virtualenv Setup
 =============
 
 	$ mkdir pandas_project && cd !$
-	$ mkvirtualenv --no-site-packages `pwd`/pandas
-	$ source pandas/bin/activate
+	$ mkvirtualenv --no-site-packages `pwd`/pandas_env
+	$ source pandas_env/bin/activate
 
 Requirements
 =============
+
++ Install numpy so pip install -r does not fail
+
+		pip install numpy
 
 + Install with minimum and recommended dependencies
 
