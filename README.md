@@ -14,9 +14,10 @@ Virtualenv Setup
 Requirements
 =============
 
-+ Install numpy so pip install -r does not fail
++ Install numpy and scipy so pip install -r does not fail
 
-		pip install numpy
+		pip install numpy && pip install scipy && pip install patsy && pip
+        install Cython && pip install lxml
 
 + Install with minimum and recommended dependencies
 
@@ -33,6 +34,6 @@ Requirements
 + Various build dependencies on Debian
 
 		sudo apt-get build-dep python-lxml
-		sudo apt-get install libhdf5-dev
+		sudo apt-get install libhdf5-dev python-dev
 
 
