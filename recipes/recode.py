@@ -51,3 +51,18 @@ print df2
 
 # Print Column Attributes
 print df2.dtypes
+
+'Write condtional column means into a new column'
+df3 = pd.DataFrame({
+    'VAR_1' : [1,2,3,4,5], 
+    'VAR_2' : [1,1,1,3,3],
+    'GROUP': [1,1,1,2,2],
+})
+
+df3["GROUP_MEAN"] = df3.groupby('GROUP')['VAR_1'].transform('mean')
+
+# Print DataFrame
+print df3
+
+# Print Column Attributes
+print df3.dtypes
