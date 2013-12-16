@@ -34,11 +34,11 @@ Requirements
 
         for package in $(cat pandas-recipes/requirements/visualization.txt); do pip install "$package"; done 
 
- + Install ipython notebook
++ Install ipython notebook
 
         for package in $(cat pandas-recipes/requirements/notebook.txt;) do pip install "$package"; done 
 
- + Install everything and get it over with
++ Install everything and get it over with
 
         for package in $(cat pandas-recipes/requirements/*.txt); do pip install "$package"; done 
 
