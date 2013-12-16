@@ -6,30 +6,41 @@ Pandas Recipes
 Virtualenv Setup
 =============
 
-    mkdir pandas_project && cd !$
+    mkdir pandas_project && cd pandas_project 
 	mkvirtualenv --no-site-packages `pwd`/pandas_env
 	source pandas_env/bin/activate
+
+Clone the repository
+=============
+
     git clone https://github.com/madflow/pandas-recipes.git
 
 Requirements
 =============
 
-+ Install numpy and scipy so pip install -r does not fail
-
-		pip install numpy && pip install scipy && pip install patsy && pip
-        install Cython && pip install lxml
-
 + Install with minimum and recommended dependencies
 
-		pip install -r pandas-recipes/requirements/minimal.txt
+        for package in $(cat pandas-recipes/requirements/minimal.txt); do pip install "$package"; done 
 
 + Install suggested dependencies
 
-		pip install -r pandas-recipes/requirements/suggested.txt
+        for package in $(cat pandas-recipes/requirements/suggested.txt); do pip install "$package"; done 
 
 + Install SPSS read/write support
 
-		pip install -r pandas-recipes/requirements/spss.txt
+        for package in $(cat pandas-recipes/requirements/spss.txt); do pip install "$package"; done 
+
++ Install visualization tools
+
+        for package in $(cat pandas-recipes/requirements/visualization.txt); do pip install "$package"; done 
+
+ + Install ipython notebook
+
+        for package in $(cat pandas-recipes/requirements/notebook.txt;) do pip install "$package"; done 
+
+ + Install everything and get it over with
+
+        for package in $(cat pandas-recipes/requirements/*.txt); do pip install "$package"; done 
 
 + Various build dependencies on Debian
 
