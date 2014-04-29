@@ -8,4 +8,5 @@ xlwt
 BeautifulSoup4
 lxml
 html5lib
+SQLAlchemy
 git+https://github.com/PyTables/PyTables.git@v.3.0.0#egg=tables
